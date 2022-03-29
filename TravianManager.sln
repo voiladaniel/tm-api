@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravianManager", "TravianManager\TravianManager\TravianManager.csproj", "{A5E86B62-AF16-4155-A229-032750F83291}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravianManager.BusinessLogic", "TravianManager\TravianManager.BusinessLogic\TravianManager.BusinessLogic.csproj", "{647BB176-0892-4E57-BBCB-5F09B593766B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravianManager.Core", "TravianManager\TravianManager.Core\TravianManager.Core.csproj", "{749A8B95-F6CE-4856-8D0D-FE2359832C64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravianManager.Data", "TravianManager\TravianManager.Data\TravianManager.Data.csproj", "{FF8DF869-EFEB-4092-B813-CCFDD1430FF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravianManager.Data.Sql", "TravianManager.Data.Sql\TravianManager.Data.Sql.csproj", "{C2E259CF-85FD-42AD-8021-7012E1310BF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71E27B4C-5075-4228-840D-3FD8D49E6C01}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E86B62-AF16-4155-A229-032750F83291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E86B62-AF16-4155-A229-032750F83291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E86B62-AF16-4155-A229-032750F83291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E86B62-AF16-4155-A229-032750F83291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647BB176-0892-4E57-BBCB-5F09B593766B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647BB176-0892-4E57-BBCB-5F09B593766B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647BB176-0892-4E57-BBCB-5F09B593766B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647BB176-0892-4E57-BBCB-5F09B593766B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{749A8B95-F6CE-4856-8D0D-FE2359832C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749A8B95-F6CE-4856-8D0D-FE2359832C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749A8B95-F6CE-4856-8D0D-FE2359832C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749A8B95-F6CE-4856-8D0D-FE2359832C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8DF869-EFEB-4092-B813-CCFDD1430FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8DF869-EFEB-4092-B813-CCFDD1430FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8DF869-EFEB-4092-B813-CCFDD1430FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8DF869-EFEB-4092-B813-CCFDD1430FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E259CF-85FD-42AD-8021-7012E1310BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E259CF-85FD-42AD-8021-7012E1310BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E259CF-85FD-42AD-8021-7012E1310BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E259CF-85FD-42AD-8021-7012E1310BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD650269-5F1C-4B94-BBEB-9E87945DF8C6}
+	EndGlobalSection
+EndGlobal

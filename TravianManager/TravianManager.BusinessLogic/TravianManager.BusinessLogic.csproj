@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>TravianManager.BusinessLogic</AssemblyName>
+    <RootNamespace>TravianManager.BusinessLogic</RootNamespace>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TravianManager.Core\TravianManager.Core.csproj" />
+    <ProjectReference Include="..\TravianManager.Data\TravianManager.Data.csproj" />
+  </ItemGroup>
+
+</Project>

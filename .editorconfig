@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# RS1001: Missing diagnostic analyzer attribute.
+dotnet_diagnostic.RS1001.severity = none
+
+# RS1004: Recommend adding language support to diagnostic analyzer.
+dotnet_diagnostic.RS1004.severity = none
+
+# RS1009: Only internal implementations of this interface are allowed.
+dotnet_diagnostic.RS1009.severity = none
