@@ -18,6 +18,7 @@ namespace TravianManager.Core.Data
         [ForeignKey("AccountID")]
         public Account Account { get; set; }
         
+        [ForeignKey("DefenderID")]
         public IEnumerable<Defender> Defender { get; set; }
     }
 }
