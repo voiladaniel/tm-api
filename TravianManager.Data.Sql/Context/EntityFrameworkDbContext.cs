@@ -28,7 +28,7 @@ namespace TravianManager.Data.Sql.Context
             modelBuilder.Entity<Attacker>()
                 .HasOne(c => c.Account)
                 .WithOne()
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Attacker>()
                 .HasMany(c => c.Defender);
@@ -36,7 +36,7 @@ namespace TravianManager.Data.Sql.Context
             modelBuilder.Entity<Target>()
                 .HasOne(c => c.Account)
                 .WithOne()
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Target>()
                 .HasMany(c => c.PlanDefender);
@@ -44,22 +44,22 @@ namespace TravianManager.Data.Sql.Context
             modelBuilder.Entity<PlanAttacker>()
                 .HasOne(c => c.Account)
                 .WithOne()
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<PlanDefender>()
                 .HasOne(c => c.Account)
                 .WithMany()
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<PlanDefender>()
                 .HasOne(c => c.PlanAttacker)
                 .WithMany()
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Defender>()
                 .HasOne(c => c.Account)
                 .WithMany()
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
         public Task<int> SaveChangesAsync() => base.SaveChangesAsync();
