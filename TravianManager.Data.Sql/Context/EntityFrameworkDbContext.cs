@@ -53,7 +53,8 @@ namespace TravianManager.Data.Sql.Context
 
             modelBuilder.Entity<Defender>()
                 .HasOne(c => c.Account)
-                .WithMany();
+                .WithMany()
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
         public Task<int> SaveChangesAsync() => base.SaveChangesAsync();
