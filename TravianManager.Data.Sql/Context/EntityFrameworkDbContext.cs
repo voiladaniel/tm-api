@@ -30,26 +30,32 @@ namespace TravianManager.Data.Sql.Context
                 .WithOne();
 
             modelBuilder.Entity<Attacker>()
-                .HasMany(c => c.Defender);
+                .HasMany(c => c.Defender)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Target>()
-               .HasOne(c => c.Account)
-               .WithOne();
+                .HasOne(c => c.Account)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Target>()
-                .HasMany(c => c.PlanDefender);
+                .HasMany(c => c.PlanDefender)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<PlanAttacker>()
                 .HasOne(c => c.Account)
-                .WithOne();
+                .WithOne()
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<PlanDefender>()
                 .HasOne(c => c.Account)
-                .WithMany();
+                .WithMany()
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<PlanDefender>()
                 .HasOne(c => c.PlanAttacker)
-                .WithMany();
+                .WithMany()
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Defender>()
                 .HasOne(c => c.Account)
