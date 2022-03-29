@@ -25,13 +25,15 @@ namespace TravianManager.Data.Sql.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-                        modelBuilder.Entity<Attacker>()
+                       modelBuilder.Entity<Attacker>()
                 .HasOne(c => c.Account)
                 .WithOne()
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Attacker>()
-                .HasMany(c => c.Defender);
+                .HasMany(c => c.Defender)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Target>()
                .HasOne(c => c.Account)
